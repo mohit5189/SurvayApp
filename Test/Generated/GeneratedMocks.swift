@@ -254,10 +254,408 @@ import UIKit
 }
 
 
+// MARK: - Mocks generated from file: SurvayApp/Modules/SurvayDetail/SurvayDetailInteractor.swift
+
+import Cuckoo
+@testable import SurvayApp
+
+
+ class MockSurvayDetailInteractorProtocol: SurvayDetailInteractorProtocol, Cuckoo.ProtocolMock {
+    
+     typealias MocksType = SurvayDetailInteractorProtocol
+    
+     typealias Stubbing = __StubbingProxy_SurvayDetailInteractorProtocol
+     typealias Verification = __VerificationProxy_SurvayDetailInteractorProtocol
+
+     let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: false)
+
+    
+    private var __defaultImplStub: SurvayDetailInteractorProtocol?
+
+     func enableDefaultImplementation(_ stub: SurvayDetailInteractorProtocol) {
+        __defaultImplStub = stub
+        cuckoo_manager.enableDefaultStubImplementation()
+    }
+    
+
+    
+
+    
+
+    
+
+	 struct __StubbingProxy_SurvayDetailInteractorProtocol: Cuckoo.StubbingProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	
+	     init(manager: Cuckoo.MockManager) {
+	        self.cuckoo_manager = manager
+	    }
+	    
+	    
+	}
+
+	 struct __VerificationProxy_SurvayDetailInteractorProtocol: Cuckoo.VerificationProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	    private let callMatcher: Cuckoo.CallMatcher
+	    private let sourceLocation: Cuckoo.SourceLocation
+	
+	     init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	        self.cuckoo_manager = manager
+	        self.callMatcher = callMatcher
+	        self.sourceLocation = sourceLocation
+	    }
+	
+	    
+	
+	    
+	}
+}
+
+ class SurvayDetailInteractorProtocolStub: SurvayDetailInteractorProtocol {
+    
+
+    
+
+    
+}
+
+
+// MARK: - Mocks generated from file: SurvayApp/Modules/SurvayDetail/SurvayDetailRouter.swift
+
+import Cuckoo
+@testable import SurvayApp
+
+import UIKit
+
+
+ class MockSurvayDetailRouterProtocol: SurvayDetailRouterProtocol, Cuckoo.ProtocolMock {
+    
+     typealias MocksType = SurvayDetailRouterProtocol
+    
+     typealias Stubbing = __StubbingProxy_SurvayDetailRouterProtocol
+     typealias Verification = __VerificationProxy_SurvayDetailRouterProtocol
+
+     let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: false)
+
+    
+    private var __defaultImplStub: SurvayDetailRouterProtocol?
+
+     func enableDefaultImplementation(_ stub: SurvayDetailRouterProtocol) {
+        __defaultImplStub = stub
+        cuckoo_manager.enableDefaultStubImplementation()
+    }
+    
+
+    
+    
+    
+     var sourceViewController: UIViewController? {
+        get {
+            return cuckoo_manager.getter("sourceViewController",
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.sourceViewController)
+        }
+        
+        set {
+            cuckoo_manager.setter("sourceViewController",
+                value: newValue,
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.sourceViewController = newValue)
+        }
+        
+    }
+    
+    
+    
+     var closeCompletion: VoidHandler? {
+        get {
+            return cuckoo_manager.getter("closeCompletion",
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.closeCompletion)
+        }
+        
+        set {
+            cuckoo_manager.setter("closeCompletion",
+                value: newValue,
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.closeCompletion = newValue)
+        }
+        
+    }
+    
+
+    
+
+    
+
+	 struct __StubbingProxy_SurvayDetailRouterProtocol: Cuckoo.StubbingProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	
+	     init(manager: Cuckoo.MockManager) {
+	        self.cuckoo_manager = manager
+	    }
+	    
+	    
+	    var sourceViewController: Cuckoo.ProtocolToBeStubbedOptionalProperty<MockSurvayDetailRouterProtocol, UIViewController> {
+	        return .init(manager: cuckoo_manager, name: "sourceViewController")
+	    }
+	    
+	    
+	    var closeCompletion: Cuckoo.ProtocolToBeStubbedOptionalProperty<MockSurvayDetailRouterProtocol, VoidHandler> {
+	        return .init(manager: cuckoo_manager, name: "closeCompletion")
+	    }
+	    
+	    
+	}
+
+	 struct __VerificationProxy_SurvayDetailRouterProtocol: Cuckoo.VerificationProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	    private let callMatcher: Cuckoo.CallMatcher
+	    private let sourceLocation: Cuckoo.SourceLocation
+	
+	     init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	        self.cuckoo_manager = manager
+	        self.callMatcher = callMatcher
+	        self.sourceLocation = sourceLocation
+	    }
+	
+	    
+	    
+	    var sourceViewController: Cuckoo.VerifyOptionalProperty<UIViewController> {
+	        return .init(manager: cuckoo_manager, name: "sourceViewController", callMatcher: callMatcher, sourceLocation: sourceLocation)
+	    }
+	    
+	    
+	    var closeCompletion: Cuckoo.VerifyOptionalProperty<VoidHandler> {
+	        return .init(manager: cuckoo_manager, name: "closeCompletion", callMatcher: callMatcher, sourceLocation: sourceLocation)
+	    }
+	    
+	
+	    
+	}
+}
+
+ class SurvayDetailRouterProtocolStub: SurvayDetailRouterProtocol {
+    
+    
+     var sourceViewController: UIViewController? {
+        get {
+            return DefaultValueRegistry.defaultValue(for: (UIViewController?).self)
+        }
+        
+        set { }
+        
+    }
+    
+    
+     var closeCompletion: VoidHandler? {
+        get {
+            return DefaultValueRegistry.defaultValue(for: (VoidHandler?).self)
+        }
+        
+        set { }
+        
+    }
+    
+
+    
+
+    
+}
+
+
+// MARK: - Mocks generated from file: SurvayApp/Modules/SurvayDetail/SurvayDetailView.swift
+
+import Cuckoo
+@testable import SurvayApp
+
+import UIKit
+
+
+ class MockSurvayDetailViewProtocol: SurvayDetailViewProtocol, Cuckoo.ProtocolMock {
+    
+     typealias MocksType = SurvayDetailViewProtocol
+    
+     typealias Stubbing = __StubbingProxy_SurvayDetailViewProtocol
+     typealias Verification = __VerificationProxy_SurvayDetailViewProtocol
+
+     let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: false)
+
+    
+    private var __defaultImplStub: SurvayDetailViewProtocol?
+
+     func enableDefaultImplementation(_ stub: SurvayDetailViewProtocol) {
+        __defaultImplStub = stub
+        cuckoo_manager.enableDefaultStubImplementation()
+    }
+    
+
+    
+    
+    
+     var presenter: SurvayDetailPresenterProtocol? {
+        get {
+            return cuckoo_manager.getter("presenter",
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.presenter)
+        }
+        
+        set {
+            cuckoo_manager.setter("presenter",
+                value: newValue,
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.presenter = newValue)
+        }
+        
+    }
+    
+    
+    
+     var view: UIView {
+        get {
+            return cuckoo_manager.getter("view",
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.view)
+        }
+        
+    }
+    
+
+    
+
+    
+    
+    
+     func presentModel(model: SurvayModel)  {
+        
+    return cuckoo_manager.call("presentModel(model: SurvayModel)",
+            parameters: (model),
+            escapingParameters: (model),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.presentModel(model: model))
+        
+    }
+    
+
+	 struct __StubbingProxy_SurvayDetailViewProtocol: Cuckoo.StubbingProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	
+	     init(manager: Cuckoo.MockManager) {
+	        self.cuckoo_manager = manager
+	    }
+	    
+	    
+	    var presenter: Cuckoo.ProtocolToBeStubbedOptionalProperty<MockSurvayDetailViewProtocol, SurvayDetailPresenterProtocol> {
+	        return .init(manager: cuckoo_manager, name: "presenter")
+	    }
+	    
+	    
+	    var view: Cuckoo.ProtocolToBeStubbedReadOnlyProperty<MockSurvayDetailViewProtocol, UIView> {
+	        return .init(manager: cuckoo_manager, name: "view")
+	    }
+	    
+	    
+	    func presentModel<M1: Cuckoo.Matchable>(model: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(SurvayModel)> where M1.MatchedType == SurvayModel {
+	        let matchers: [Cuckoo.ParameterMatcher<(SurvayModel)>] = [wrap(matchable: model) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockSurvayDetailViewProtocol.self, method: "presentModel(model: SurvayModel)", parameterMatchers: matchers))
+	    }
+	    
+	}
+
+	 struct __VerificationProxy_SurvayDetailViewProtocol: Cuckoo.VerificationProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	    private let callMatcher: Cuckoo.CallMatcher
+	    private let sourceLocation: Cuckoo.SourceLocation
+	
+	     init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	        self.cuckoo_manager = manager
+	        self.callMatcher = callMatcher
+	        self.sourceLocation = sourceLocation
+	    }
+	
+	    
+	    
+	    var presenter: Cuckoo.VerifyOptionalProperty<SurvayDetailPresenterProtocol> {
+	        return .init(manager: cuckoo_manager, name: "presenter", callMatcher: callMatcher, sourceLocation: sourceLocation)
+	    }
+	    
+	    
+	    var view: Cuckoo.VerifyReadOnlyProperty<UIView> {
+	        return .init(manager: cuckoo_manager, name: "view", callMatcher: callMatcher, sourceLocation: sourceLocation)
+	    }
+	    
+	
+	    
+	    @discardableResult
+	    func presentModel<M1: Cuckoo.Matchable>(model: M1) -> Cuckoo.__DoNotUse<(SurvayModel), Void> where M1.MatchedType == SurvayModel {
+	        let matchers: [Cuckoo.ParameterMatcher<(SurvayModel)>] = [wrap(matchable: model) { $0 }]
+	        return cuckoo_manager.verify("presentModel(model: SurvayModel)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	}
+}
+
+ class SurvayDetailViewProtocolStub: SurvayDetailViewProtocol {
+    
+    
+     var presenter: SurvayDetailPresenterProtocol? {
+        get {
+            return DefaultValueRegistry.defaultValue(for: (SurvayDetailPresenterProtocol?).self)
+        }
+        
+        set { }
+        
+    }
+    
+    
+     var view: UIView {
+        get {
+            return DefaultValueRegistry.defaultValue(for: (UIView).self)
+        }
+        
+    }
+    
+
+    
+
+    
+     func presentModel(model: SurvayModel)   {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
+    }
+    
+}
+
+
 // MARK: - Mocks generated from file: SurvayApp/Modules/SurvayList/SurvayListInteractor.swift
 
 import Cuckoo
 @testable import SurvayApp
+
+import Foundation
 
 
  class MockSurvayListInteractorProtocol: SurvayListInteractorProtocol, Cuckoo.ProtocolMock {
@@ -279,9 +677,63 @@ import Cuckoo
     
 
     
+    
+    
+     var httpClient: HTTPClientProtocol? {
+        get {
+            return cuckoo_manager.getter("httpClient",
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.httpClient)
+        }
+        
+        set {
+            cuckoo_manager.setter("httpClient",
+                value: newValue,
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.httpClient = newValue)
+        }
+        
+    }
+    
 
     
 
+    
+    
+    
+     func fetchAuthToken(completion: @escaping (AuthenticationModel?) -> Void)  {
+        
+    return cuckoo_manager.call("fetchAuthToken(completion: @escaping (AuthenticationModel?) -> Void)",
+            parameters: (completion),
+            escapingParameters: (completion),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.fetchAuthToken(completion: completion))
+        
+    }
+    
+    
+    
+     func fetchSurvays(_ completion: @escaping ([SurvayModel]?) -> Void)  {
+        
+    return cuckoo_manager.call("fetchSurvays(_: @escaping ([SurvayModel]?) -> Void)",
+            parameters: (completion),
+            escapingParameters: (completion),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.fetchSurvays(completion))
+        
+    }
     
 
 	 struct __StubbingProxy_SurvayListInteractorProtocol: Cuckoo.StubbingProxy {
@@ -291,6 +743,21 @@ import Cuckoo
 	        self.cuckoo_manager = manager
 	    }
 	    
+	    
+	    var httpClient: Cuckoo.ProtocolToBeStubbedOptionalProperty<MockSurvayListInteractorProtocol, HTTPClientProtocol> {
+	        return .init(manager: cuckoo_manager, name: "httpClient")
+	    }
+	    
+	    
+	    func fetchAuthToken<M1: Cuckoo.Matchable>(completion: M1) -> Cuckoo.ProtocolStubNoReturnFunction<((AuthenticationModel?) -> Void)> where M1.MatchedType == (AuthenticationModel?) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<((AuthenticationModel?) -> Void)>] = [wrap(matchable: completion) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockSurvayListInteractorProtocol.self, method: "fetchAuthToken(completion: @escaping (AuthenticationModel?) -> Void)", parameterMatchers: matchers))
+	    }
+	    
+	    func fetchSurvays<M1: Cuckoo.Matchable>(_ completion: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(([SurvayModel]?) -> Void)> where M1.MatchedType == ([SurvayModel]?) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<(([SurvayModel]?) -> Void)>] = [wrap(matchable: completion) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockSurvayListInteractorProtocol.self, method: "fetchSurvays(_: @escaping ([SurvayModel]?) -> Void)", parameterMatchers: matchers))
+	    }
 	    
 	}
 
@@ -306,16 +773,51 @@ import Cuckoo
 	    }
 	
 	    
+	    
+	    var httpClient: Cuckoo.VerifyOptionalProperty<HTTPClientProtocol> {
+	        return .init(manager: cuckoo_manager, name: "httpClient", callMatcher: callMatcher, sourceLocation: sourceLocation)
+	    }
+	    
 	
+	    
+	    @discardableResult
+	    func fetchAuthToken<M1: Cuckoo.Matchable>(completion: M1) -> Cuckoo.__DoNotUse<((AuthenticationModel?) -> Void), Void> where M1.MatchedType == (AuthenticationModel?) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<((AuthenticationModel?) -> Void)>] = [wrap(matchable: completion) { $0 }]
+	        return cuckoo_manager.verify("fetchAuthToken(completion: @escaping (AuthenticationModel?) -> Void)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func fetchSurvays<M1: Cuckoo.Matchable>(_ completion: M1) -> Cuckoo.__DoNotUse<(([SurvayModel]?) -> Void), Void> where M1.MatchedType == ([SurvayModel]?) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<(([SurvayModel]?) -> Void)>] = [wrap(matchable: completion) { $0 }]
+	        return cuckoo_manager.verify("fetchSurvays(_: @escaping ([SurvayModel]?) -> Void)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
 	    
 	}
 }
 
  class SurvayListInteractorProtocolStub: SurvayListInteractorProtocol {
     
+    
+     var httpClient: HTTPClientProtocol? {
+        get {
+            return DefaultValueRegistry.defaultValue(for: (HTTPClientProtocol?).self)
+        }
+        
+        set { }
+        
+    }
+    
 
     
 
+    
+     func fetchAuthToken(completion: @escaping (AuthenticationModel?) -> Void)   {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
+    }
+    
+     func fetchSurvays(_ completion: @escaping ([SurvayModel]?) -> Void)   {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
+    }
     
 }
 
@@ -325,6 +827,7 @@ import Cuckoo
 import Cuckoo
 @testable import SurvayApp
 
+import MBProgressHUD
 import UIKit
 
 
@@ -399,6 +902,36 @@ import UIKit
     
 
     
+    
+    
+     func handleLoader(shouldShow: Bool)  {
+        
+    return cuckoo_manager.call("handleLoader(shouldShow: Bool)",
+            parameters: (shouldShow),
+            escapingParameters: (shouldShow),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.handleLoader(shouldShow: shouldShow))
+        
+    }
+    
+    
+    
+     func openSurvayDetails(_ survayModel: SurvayModel)  {
+        
+    return cuckoo_manager.call("openSurvayDetails(_: SurvayModel)",
+            parameters: (survayModel),
+            escapingParameters: (survayModel),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.openSurvayDetails(survayModel))
+        
+    }
+    
 
 	 struct __StubbingProxy_SurvayListRouterProtocol: Cuckoo.StubbingProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
@@ -417,6 +950,16 @@ import UIKit
 	        return .init(manager: cuckoo_manager, name: "closeCompletion")
 	    }
 	    
+	    
+	    func handleLoader<M1: Cuckoo.Matchable>(shouldShow: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Bool)> where M1.MatchedType == Bool {
+	        let matchers: [Cuckoo.ParameterMatcher<(Bool)>] = [wrap(matchable: shouldShow) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockSurvayListRouterProtocol.self, method: "handleLoader(shouldShow: Bool)", parameterMatchers: matchers))
+	    }
+	    
+	    func openSurvayDetails<M1: Cuckoo.Matchable>(_ survayModel: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(SurvayModel)> where M1.MatchedType == SurvayModel {
+	        let matchers: [Cuckoo.ParameterMatcher<(SurvayModel)>] = [wrap(matchable: survayModel) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockSurvayListRouterProtocol.self, method: "openSurvayDetails(_: SurvayModel)", parameterMatchers: matchers))
+	    }
 	    
 	}
 
@@ -443,6 +986,18 @@ import UIKit
 	    }
 	    
 	
+	    
+	    @discardableResult
+	    func handleLoader<M1: Cuckoo.Matchable>(shouldShow: M1) -> Cuckoo.__DoNotUse<(Bool), Void> where M1.MatchedType == Bool {
+	        let matchers: [Cuckoo.ParameterMatcher<(Bool)>] = [wrap(matchable: shouldShow) { $0 }]
+	        return cuckoo_manager.verify("handleLoader(shouldShow: Bool)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func openSurvayDetails<M1: Cuckoo.Matchable>(_ survayModel: M1) -> Cuckoo.__DoNotUse<(SurvayModel), Void> where M1.MatchedType == SurvayModel {
+	        let matchers: [Cuckoo.ParameterMatcher<(SurvayModel)>] = [wrap(matchable: survayModel) { $0 }]
+	        return cuckoo_manager.verify("openSurvayDetails(_: SurvayModel)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
 	    
 	}
 }
@@ -473,177 +1028,11 @@ import UIKit
     
 
     
-}
-
-
-// MARK: - Mocks generated from file: SurvayApp/Modules/SurvayList/SurvayListView.swift
-
-import Cuckoo
-@testable import SurvayApp
-
-import UIKit
-
-
- class MockSurvayListViewProtocol: SurvayListViewProtocol, Cuckoo.ProtocolMock {
-    
-     typealias MocksType = SurvayListViewProtocol
-    
-     typealias Stubbing = __StubbingProxy_SurvayListViewProtocol
-     typealias Verification = __VerificationProxy_SurvayListViewProtocol
-
-     let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: false)
-
-    
-    private var __defaultImplStub: SurvayListViewProtocol?
-
-     func enableDefaultImplementation(_ stub: SurvayListViewProtocol) {
-        __defaultImplStub = stub
-        cuckoo_manager.enableDefaultStubImplementation()
+     func handleLoader(shouldShow: Bool)   {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
-
-    
-    
-    
-     var presenter: SurvayListPresenterProtocol? {
-        get {
-            return cuckoo_manager.getter("presenter",
-                superclassCall:
-                    
-                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
-                    ,
-                defaultCall: __defaultImplStub!.presenter)
-        }
-        
-        set {
-            cuckoo_manager.setter("presenter",
-                value: newValue,
-                superclassCall:
-                    
-                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
-                    ,
-                defaultCall: __defaultImplStub!.presenter = newValue)
-        }
-        
-    }
-    
-    
-    
-     var view: UIView {
-        get {
-            return cuckoo_manager.getter("view",
-                superclassCall:
-                    
-                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
-                    ,
-                defaultCall: __defaultImplStub!.view)
-        }
-        
-    }
-    
-
-    
-
-    
-    
-    
-     func presentModel(model: SurvayListModel)  {
-        
-    return cuckoo_manager.call("presentModel(model: SurvayListModel)",
-            parameters: (model),
-            escapingParameters: (model),
-            superclassCall:
-                
-                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
-                ,
-            defaultCall: __defaultImplStub!.presentModel(model: model))
-        
-    }
-    
-
-	 struct __StubbingProxy_SurvayListViewProtocol: Cuckoo.StubbingProxy {
-	    private let cuckoo_manager: Cuckoo.MockManager
-	
-	     init(manager: Cuckoo.MockManager) {
-	        self.cuckoo_manager = manager
-	    }
-	    
-	    
-	    var presenter: Cuckoo.ProtocolToBeStubbedOptionalProperty<MockSurvayListViewProtocol, SurvayListPresenterProtocol> {
-	        return .init(manager: cuckoo_manager, name: "presenter")
-	    }
-	    
-	    
-	    var view: Cuckoo.ProtocolToBeStubbedReadOnlyProperty<MockSurvayListViewProtocol, UIView> {
-	        return .init(manager: cuckoo_manager, name: "view")
-	    }
-	    
-	    
-	    func presentModel<M1: Cuckoo.Matchable>(model: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(SurvayListModel)> where M1.MatchedType == SurvayListModel {
-	        let matchers: [Cuckoo.ParameterMatcher<(SurvayListModel)>] = [wrap(matchable: model) { $0 }]
-	        return .init(stub: cuckoo_manager.createStub(for: MockSurvayListViewProtocol.self, method: "presentModel(model: SurvayListModel)", parameterMatchers: matchers))
-	    }
-	    
-	}
-
-	 struct __VerificationProxy_SurvayListViewProtocol: Cuckoo.VerificationProxy {
-	    private let cuckoo_manager: Cuckoo.MockManager
-	    private let callMatcher: Cuckoo.CallMatcher
-	    private let sourceLocation: Cuckoo.SourceLocation
-	
-	     init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
-	        self.cuckoo_manager = manager
-	        self.callMatcher = callMatcher
-	        self.sourceLocation = sourceLocation
-	    }
-	
-	    
-	    
-	    var presenter: Cuckoo.VerifyOptionalProperty<SurvayListPresenterProtocol> {
-	        return .init(manager: cuckoo_manager, name: "presenter", callMatcher: callMatcher, sourceLocation: sourceLocation)
-	    }
-	    
-	    
-	    var view: Cuckoo.VerifyReadOnlyProperty<UIView> {
-	        return .init(manager: cuckoo_manager, name: "view", callMatcher: callMatcher, sourceLocation: sourceLocation)
-	    }
-	    
-	
-	    
-	    @discardableResult
-	    func presentModel<M1: Cuckoo.Matchable>(model: M1) -> Cuckoo.__DoNotUse<(SurvayListModel), Void> where M1.MatchedType == SurvayListModel {
-	        let matchers: [Cuckoo.ParameterMatcher<(SurvayListModel)>] = [wrap(matchable: model) { $0 }]
-	        return cuckoo_manager.verify("presentModel(model: SurvayListModel)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
-	    }
-	    
-	}
-}
-
- class SurvayListViewProtocolStub: SurvayListViewProtocol {
-    
-    
-     var presenter: SurvayListPresenterProtocol? {
-        get {
-            return DefaultValueRegistry.defaultValue(for: (SurvayListPresenterProtocol?).self)
-        }
-        
-        set { }
-        
-    }
-    
-    
-     var view: UIView {
-        get {
-            return DefaultValueRegistry.defaultValue(for: (UIView).self)
-        }
-        
-    }
-    
-
-    
-
-    
-     func presentModel(model: SurvayListModel)   {
+     func openSurvayDetails(_ survayModel: SurvayModel)   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     

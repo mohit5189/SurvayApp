@@ -1,8 +1,0 @@
-${SRCROOT}/SurvayApp/Misc/Routers.swift
-${SRCROOT}/SurvayApp/Misc/AnyView.swift
-${SRCROOT}/SurvayApp/Modules/SurvayList/SurvayListView.swift
-${SRCROOT}/SurvayApp/Modules/SurvayList/SurvayListInteractor.swift
-${SRCROOT}/SurvayApp/Modules/SurvayList/SurvayListRouter.swift
-${SRCROOT}/SurvayApp/Modules/SurvayDetail/SurvayDetailView.swift
-${SRCROOT}/SurvayApp/Modules/SurvayDetail/SurvayDetailInteractor.swift
-${SRCROOT}/SurvayApp/Modules/SurvayDetail/SurvayDetailRouter.swift
