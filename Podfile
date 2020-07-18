@@ -8,6 +8,7 @@ target 'SurvayApp' do
   pod 'Swinject', '2.6.0'
   pod 'SwinjectAutoregistration', '2.6.0'
   pod 'SnapKit', '5.0.1'
+  pod 'MBProgressHUD', '1.2.0'
 
   target 'SurvayAppTests' do
     inherit! :search_paths
