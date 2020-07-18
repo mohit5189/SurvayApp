@@ -5,13 +5,13 @@ private struct Constants {
 }
 
 protocol SurvayListInteractorProtocol: class {
+    var httpClient: HTTPClientProtocol? { get set }
     func fetchAuthToken(completion: @escaping (AuthenticationModel?) -> Void)
-    
     func fetchSurvays(_ completion: @escaping ([SurvayModel]?) -> Void)
 }
 
 final class SurvayListInteractor: SurvayListInteractorProtocol {
-    private var httpClient: HTTPClientProtocol?
+    var httpClient: HTTPClientProtocol?
     
     init(httpClient: HTTPClientProtocol) {
         self.httpClient = httpClient

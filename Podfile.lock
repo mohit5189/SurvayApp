@@ -1,5 +1,4 @@
 PODS:
-  - Cuckoo (1.1.0)
   - MBProgressHUD (1.2.0)
   - Nimble (8.0.2)
   - Quick (2.1.0)
@@ -12,7 +11,6 @@ PODS:
     - Swinject (~> 2.6)
 
 DEPENDENCIES:
-  - Cuckoo (= 1.1.0)
   - MBProgressHUD (= 1.2.0)
   - Nimble (= 8.0.2)
   - Quick (= 2.1.0)
@@ -23,7 +21,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Cuckoo
     - MBProgressHUD
     - Nimble
     - Quick
@@ -33,7 +30,6 @@ SPEC REPOS:
     - SwinjectAutoregistration
 
 SPEC CHECKSUMS:
-  Cuckoo: 6184a6bdc122b1a8e27b80198f76d1038ddbe861
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
@@ -42,6 +38,6 @@ SPEC CHECKSUMS:
   Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
   SwinjectAutoregistration: 93a908f7543c401b0c315305ac0ae501efdbce89
 
-PODFILE CHECKSUM: 45a540f77e5a046c235f049a04199f51e6cb44fe
+PODFILE CHECKSUM: 7daffc3427d83eefaade93c50ab659b165aafc99
 
 COCOAPODS: 1.9.2

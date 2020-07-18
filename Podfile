@@ -15,7 +15,6 @@ target 'SurvayApp' do
     inherit! :search_paths
     pod 'Quick', '2.1.0'
     pod 'Nimble', '8.0.2'
-    pod 'Cuckoo', '1.1.0'
   end
 
 end

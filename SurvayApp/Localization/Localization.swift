@@ -12,6 +12,8 @@ enum Localization: String {
     case screenTitle = "survay_title"
     case survayButtonTitle = "survay_button_title"
     case survayDetailTitle = "survay_detail_title"
+    case errorMessage = "error_message"
+    case okButtonTitle = "ok_button_title"
     
     func local() -> String {
         return NSLocalizedString(self.rawValue, comment: "")

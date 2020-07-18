@@ -32,10 +32,11 @@ final class SurvayListViewController: UIViewController {
         navigationItem.title = Localization.screenTitle.local()
         navigationItem.leftBarButtonItem = barButtonItem
         navigationController?.navigationBar.tintColor = .black
-     
+        
         router.handleLoader(shouldShow: true)
         interactor.fetchAuthToken { [weak self] authModel in
             guard let authModel = authModel else {
+                self?.showError()
                 return
             }
             
@@ -55,6 +56,7 @@ final class SurvayListViewController: UIViewController {
                 self?.router.handleLoader(shouldShow: false)
             }
             guard let survays = survays, !survays.isEmpty else {
+                self?.showError()
                 return
             }
 
@@ -63,6 +65,13 @@ final class SurvayListViewController: UIViewController {
             }
         }
     }
+    
+    private func showError() {
+        DispatchQueue.main.async {
+            self.router.showError()
+        }
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

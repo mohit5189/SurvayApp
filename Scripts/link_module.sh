@@ -13,17 +13,6 @@ INTERACTOR_FILE_PATH="\${SRCROOT}/SurvayApp/Modules/${MODULE_NAME}/${MODULE_NAME
 ROUTER_FILE_PATH="\${SRCROOT}/SurvayApp/Modules/${MODULE_NAME}/${MODULE_NAME}Router.swift"
 PATHS_TO_ADD=($VIEW_FILE_PATH $INTERACTOR_FILE_PATH $ROUTER_FILE_PATH)
 
-CUCKOO_INPUT_FILE_PATH="Scripts/CuckooInputFiles.xcfilelist"
-for i in "${PATHS_TO_ADD[@]}"
-do
-    if ! grep -q "$i" $CUCKOO_INPUT_FILE_PATH; then
-        echo "$i" >> $CUCKOO_INPUT_FILE_PATH
-        echo "Added $i into $CUCKOO_INPUT_FILE_PATH"
-    else
-        echo "ERROR: $i already exists in $CUCKOO_INPUT_FILE_PATH"
-    fi
-done
-
 APP_ASSEMBLY_FILE_PATH="SurvayApp/Modules/App/AppAssembly/DependencyManager.swift"
 ASSEMBLY_CONTRUCTOR="            ${MODULE_NAME}DIAssembly(),"
 if ! grep -q "$ASSEMBLY_CONTRUCTOR" $APP_ASSEMBLY_FILE_PATH; then
