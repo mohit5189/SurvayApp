@@ -1,5 +1,9 @@
 import Foundation
 
+private struct Constants {
+    static let jsonKey = "value"
+}
+
 protocol SurvayListInteractorProtocol: class {
     func fetchAuthToken(completion: @escaping (AuthenticationModel?) -> Void)
     
@@ -14,7 +18,7 @@ final class SurvayListInteractor: SurvayListInteractorProtocol {
     }
     
     func fetchAuthToken(completion: @escaping (AuthenticationModel?) -> Void) {
-        httpClient?.sendRequest(APIConfig.baseURL + APIConfig.tokenEndPoint, apiMethod: .POST, params: ["value": authRequest()], completion: { data, error in
+        httpClient?.sendRequest(APIConfig.baseURL + APIConfig.tokenEndPoint, apiMethod: .POST, params: [Constants.jsonKey: authRequest()], completion: { data, error in
             if error != nil {
                 completion(nil)
             } else {

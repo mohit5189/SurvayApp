@@ -10,6 +10,7 @@ import Foundation
 
 private struct Constants {
     static let networkTimeoutInterval = 10
+    static let jsonKey = "value"
 }
 
 protocol HTTPClientProtocol {
@@ -32,7 +33,7 @@ final class HTTPClient: HTTPClientProtocol {
         let request: NSMutableURLRequest = NSMutableURLRequest(url: NSURL(string: requestURL)! as URL, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: TimeInterval(Constants.networkTimeoutInterval))
         request.httpMethod = apiMethod.rawValue
 
-        if apiMethod == .POST, let value = params?["value"] as? String {
+        if apiMethod == .POST, let value = params?[Constants.jsonKey] as? String {
             request.httpBody = Data(value.utf8)
         }
         
