@@ -2,11 +2,7 @@ import UIKit
 
 protocol SurvayListViewProtocol: AnyView {
     var presenter: SurvayListPresenterProtocol? { get set }
-    func presentModel(model: SurvayListModel)
-}
-
-struct SurvayListModel {
-
+    func presentSurvays(model: [SurvayModel])
 }
 
 final class SurvayListView: UIView {
@@ -14,7 +10,7 @@ final class SurvayListView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-
+        backgroundColor = .white
         adjustSubviews()
     }
 
@@ -30,7 +26,7 @@ final class SurvayListView: UIView {
 }
 
 extension SurvayListView: SurvayListViewProtocol {
-    func presentModel(model: SurvayListModel) {
+    func presentSurvays(model: [SurvayModel]) {
 
     }
 }

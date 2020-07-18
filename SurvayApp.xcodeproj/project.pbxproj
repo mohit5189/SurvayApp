@@ -27,6 +27,12 @@
 		B737FCB024C2B6B90094D24B /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCAF24C2B6B90094D24B /* DependencyManager.swift */; };
 		B737FCB424C2B7BF0094D24B /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCB324C2B7BF0094D24B /* GeneratedMocks.swift */; };
 		B737FCB724C2B9C40094D24B /* UINavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCB624C2B9C30094D24B /* UINavigationControllerMock.swift */; };
+		B737FCBC24C2BC9C0094D24B /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCBB24C2BC9C0094D24B /* ServiceAssembly.swift */; };
+		B737FCBE24C2BCC10094D24B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCBD24C2BCC10094D24B /* HTTPClient.swift */; };
+		B737FCC124C2BD9E0094D24B /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCC024C2BD9E0094D24B /* APIConfig.swift */; };
+		B737FCC424C2BE170094D24B /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCC324C2BE170094D24B /* AuthenticationModel.swift */; };
+		B737FCC624C2CE7E0094D24B /* SurvayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCC524C2CE7E0094D24B /* SurvayModel.swift */; };
+		B737FCC924C2D1710094D24B /* SurvaySharedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCC824C2D1710094D24B /* SurvaySharedManager.swift */; };
 		DC9F1EF80CA7776E0DBD35DD /* SurvayListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51FEF2775A2A8DC7B3A0E6 /* SurvayListAssembly.swift */; };
 		E5757B74821B18A9465CD1A8 /* SurvayListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76145CAFD00387C1C622100 /* SurvayListInteractorTest.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +74,12 @@
 		B737FCAF24C2B6B90094D24B /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		B737FCB324C2B7BF0094D24B /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		B737FCB624C2B9C30094D24B /* UINavigationControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerMock.swift; sourceTree = "<group>"; };
+		B737FCBB24C2BC9C0094D24B /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		B737FCBD24C2BCC10094D24B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		B737FCC024C2BD9E0094D24B /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		B737FCC324C2BE170094D24B /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		B737FCC524C2CE7E0094D24B /* SurvayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvayModel.swift; sourceTree = "<group>"; };
+		B737FCC824C2D1710094D24B /* SurvaySharedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvaySharedManager.swift; sourceTree = "<group>"; };
 		BF09038A0D4B4D44B7FFFD3A /* SurvayListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListInteractor.swift; sourceTree = "<group>"; };
 		C9FA847778491C1C01A3A69D /* SurvayListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListRouter.swift; sourceTree = "<group>"; };
 		D76145CAFD00387C1C622100 /* SurvayListInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListInteractorTest.swift; sourceTree = "<group>"; };
@@ -136,6 +148,8 @@
 		B737FC6924C2AE5B0094D24B = {
 			isa = PBXGroup;
 			children = (
+				B737FCC724C2D1620094D24B /* Helper */,
+				B737FCC224C2BE030094D24B /* Models */,
 				B737FCB924C2BB990094D24B /* HTTPClient */,
 				B737FC9F24C2B1120094D24B /* AppDelegate */,
 				B737FCA924C2B3B10094D24B /* Config */,
@@ -221,6 +235,7 @@
 		B737FCA924C2B3B10094D24B /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				B737FCBF24C2BD8C0094D24B /* APIConfigs */,
 				B737FCAA24C2B3B10094D24B /* Info.plist */,
 			);
 			path = Config;
@@ -229,6 +244,7 @@
 		B737FCAD24C2B6B90094D24B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				B737FCBA24C2BC810094D24B /* ServiceAssembly */,
 				B737FCAE24C2B6B90094D24B /* AppAssembly */,
 			);
 			path = App;
@@ -269,8 +285,42 @@
 		B737FCB924C2BB990094D24B /* HTTPClient */ = {
 			isa = PBXGroup;
 			children = (
+				B737FCBD24C2BCC10094D24B /* HTTPClient.swift */,
 			);
 			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		B737FCBA24C2BC810094D24B /* ServiceAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				B737FCBB24C2BC9C0094D24B /* ServiceAssembly.swift */,
+			);
+			path = ServiceAssembly;
+			sourceTree = "<group>";
+		};
+		B737FCBF24C2BD8C0094D24B /* APIConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				B737FCC024C2BD9E0094D24B /* APIConfig.swift */,
+			);
+			path = APIConfigs;
+			sourceTree = "<group>";
+		};
+		B737FCC224C2BE030094D24B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B737FCC324C2BE170094D24B /* AuthenticationModel.swift */,
+				B737FCC524C2CE7E0094D24B /* SurvayModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B737FCC724C2D1620094D24B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B737FCC824C2D1710094D24B /* SurvaySharedManager.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		C43D954FE07A03D0978139FA /* SurvayList */ = {
@@ -320,8 +370,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B737FC9424C2AE5F0094D24B /* Build configuration list for PBXNativeTarget "SurvayAppTests" */;
 			buildPhases = (
-				B737FCB824C2BA930094D24B /* Cuckoo Mocks */,
 				A119A1B25B260BA5082F5BBF /* [CP] Check Pods Manifest.lock */,
+				B737FCB824C2BA930094D24B /* Cuckoo Mocks */,
 				B737FC8424C2AE5F0094D24B /* Sources */,
 				B737FC8524C2AE5F0094D24B /* Frameworks */,
 				B737FC8624C2AE5F0094D24B /* Resources */,
@@ -503,13 +553,19 @@
 			files = (
 				B737FC9E24C2B0FE0094D24B /* AnyView.swift in Sources */,
 				B737FC7624C2AE5B0094D24B /* AppDelegate.swift in Sources */,
+				B737FCBE24C2BCC10094D24B /* HTTPClient.swift in Sources */,
 				B737FCB024C2B6B90094D24B /* DependencyManager.swift in Sources */,
 				B737FCA224C2B1460094D24B /* Localization.swift in Sources */,
 				B737FC9D24C2B0FE0094D24B /* Routers.swift in Sources */,
+				B737FCC424C2BE170094D24B /* AuthenticationModel.swift in Sources */,
+				B737FCC624C2CE7E0094D24B /* SurvayModel.swift in Sources */,
+				B737FCC124C2BD9E0094D24B /* APIConfig.swift in Sources */,
 				B737FC7824C2AE5B0094D24B /* SceneDelegate.swift in Sources */,
 				DC9F1EF80CA7776E0DBD35DD /* SurvayListAssembly.swift in Sources */,
+				B737FCC924C2D1710094D24B /* SurvaySharedManager.swift in Sources */,
 				8114B29C0203251FFF162EF9 /* SurvayListController.swift in Sources */,
 				85C30769D3C453367EAF17B2 /* SurvayListInteractor.swift in Sources */,
+				B737FCBC24C2BC9C0094D24B /* ServiceAssembly.swift in Sources */,
 				6D4B38FBB96C6452CF5D852F /* SurvayListRouter.swift in Sources */,
 				6E9C987D2C84645FC6ACAE68 /* SurvayListView.swift in Sources */,
 			);

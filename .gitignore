@@ -371,3 +371,15 @@ Pods/Target Support Files/SwinjectAutoregistration/SwinjectAutoregistration-umbr
 Pods/Target Support Files/SwinjectAutoregistration/SwinjectAutoregistration.debug.xcconfig
 Pods/Target Support Files/SwinjectAutoregistration/SwinjectAutoregistration.modulemap
 Pods/Target Support Files/SwinjectAutoregistration/SwinjectAutoregistration.release.xcconfig
+Pods/MBProgressHUD/LICENSE
+Pods/MBProgressHUD/MBProgressHUD.h
+Pods/MBProgressHUD/MBProgressHUD.m
+Pods/MBProgressHUD/README.mdown
+Pods/Pods.xcodeproj/xcuserdata/mohitkumar.xcuserdatad/xcschemes/MBProgressHUD.xcscheme
+Pods/Target Support Files/MBProgressHUD/MBProgressHUD-dummy.m
+Pods/Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist
+Pods/Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch
+Pods/Target Support Files/MBProgressHUD/MBProgressHUD-umbrella.h
+Pods/Target Support Files/MBProgressHUD/MBProgressHUD.debug.xcconfig
+Pods/Target Support Files/MBProgressHUD/MBProgressHUD.modulemap
+Pods/Target Support Files/MBProgressHUD/MBProgressHUD.release.xcconfig

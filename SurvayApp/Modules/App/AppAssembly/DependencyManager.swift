@@ -9,6 +9,7 @@ final class DependencyManager {
 
     private init() {
         assembler = Assembler([
+            ServiceAssembly(),
             SurvayListDIAssembly(),
         ])
     }
