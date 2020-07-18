@@ -7,34 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17224DB8C1EE320BAD26070B /* Pods_SurvayAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086F96F1031CDE6AB5F55B27 /* Pods_SurvayAppTests.framework */; };
-		243DF97AB2AA3CE4FEF5420C /* SurvayListRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A8C2ED707E45220C515582 /* SurvayListRouterTest.swift */; };
-		4EDA5304E814DC2E5D1DB05D /* SurvayListAssemblyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BBB82656BF70D4B394B72F /* SurvayListAssemblyTest.swift */; };
-		6D4B38FBB96C6452CF5D852F /* SurvayListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA847778491C1C01A3A69D /* SurvayListRouter.swift */; };
-		6E9C987D2C84645FC6ACAE68 /* SurvayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362BCFAE78593CC4FF733B3 /* SurvayListView.swift */; };
-		8114B29C0203251FFF162EF9 /* SurvayListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D79EFE69802920FF086242 /* SurvayListController.swift */; };
-		85C30769D3C453367EAF17B2 /* SurvayListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF09038A0D4B4D44B7FFFD3A /* SurvayListInteractor.swift */; };
-		A2AFB4FDB09448AA0B0803D2 /* Pods_SurvayApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74375CF45E6E3922D0308BE7 /* Pods_SurvayApp.framework */; };
-		B3E3C8E482C153BF85C6A6A4 /* SurvayListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602216FC9B897B5D4868EA2 /* SurvayListViewControllerTest.swift */; };
-		B737FC7624C2AE5B0094D24B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FC7524C2AE5B0094D24B /* AppDelegate.swift */; };
-		B737FC7824C2AE5B0094D24B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FC7724C2AE5B0094D24B /* SceneDelegate.swift */; };
-		B737FC7F24C2AE5F0094D24B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B737FC7E24C2AE5F0094D24B /* Assets.xcassets */; };
-		B737FC9D24C2B0FE0094D24B /* Routers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FC9B24C2B0FE0094D24B /* Routers.swift */; };
+		B737FCC124C2BD9E0094D24B /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCC024C2BD9E0094D24B /* APIConfig.swift */; };
 		B737FC9E24C2B0FE0094D24B /* AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FC9C24C2B0FE0094D24B /* AnyView.swift */; };
-		B737FCA224C2B1460094D24B /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCA124C2B1460094D24B /* Localization.swift */; };
-		B737FCA524C2B2880094D24B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B737FCA424C2B2870094D24B /* Localizable.strings */; };
-		B737FCAC24C2B3E40094D24B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B737FC8024C2AE5F0094D24B /* LaunchScreen.storyboard */; };
+		B737FC7624C2AE5B0094D24B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FC7524C2AE5B0094D24B /* AppDelegate.swift */; };
+		B737FC7F24C2AE5F0094D24B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B737FC7E24C2AE5F0094D24B /* Assets.xcassets */; };
+		B737FCC424C2BE170094D24B /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCC324C2BE170094D24B /* AuthenticationModel.swift */; };
 		B737FCB024C2B6B90094D24B /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCAF24C2B6B90094D24B /* DependencyManager.swift */; };
 		B737FCB424C2B7BF0094D24B /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCB324C2B7BF0094D24B /* GeneratedMocks.swift */; };
-		B737FCB724C2B9C40094D24B /* UINavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCB624C2B9C30094D24B /* UINavigationControllerMock.swift */; };
-		B737FCBC24C2BC9C0094D24B /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCBB24C2BC9C0094D24B /* ServiceAssembly.swift */; };
 		B737FCBE24C2BCC10094D24B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCBD24C2BCC10094D24B /* HTTPClient.swift */; };
-		B737FCC124C2BD9E0094D24B /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCC024C2BD9E0094D24B /* APIConfig.swift */; };
-		B737FCC424C2BE170094D24B /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCC324C2BE170094D24B /* AuthenticationModel.swift */; };
+		B737FCAC24C2B3E40094D24B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B737FC8024C2AE5F0094D24B /* LaunchScreen.storyboard */; };
+		B737FCA524C2B2880094D24B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B737FCA424C2B2870094D24B /* Localizable.strings */; };
+		B737FCA224C2B1460094D24B /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCA124C2B1460094D24B /* Localization.swift */; };
+		A2AFB4FDB09448AA0B0803D2 /* Pods_SurvayApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74375CF45E6E3922D0308BE7 /* Pods_SurvayApp.framework */; };
+		17224DB8C1EE320BAD26070B /* Pods_SurvayAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086F96F1031CDE6AB5F55B27 /* Pods_SurvayAppTests.framework */; };
+		B737FC9D24C2B0FE0094D24B /* Routers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FC9B24C2B0FE0094D24B /* Routers.swift */; };
+		B737FC7824C2AE5B0094D24B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FC7724C2AE5B0094D24B /* SceneDelegate.swift */; };
+		B737FCBC24C2BC9C0094D24B /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCBB24C2BC9C0094D24B /* ServiceAssembly.swift */; };
+		C18BF47616AF68B88CF34959 /* SurvayDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26144AFA4837F662B49E54 /* SurvayDetailAssembly.swift */; };
+		21491F870D5D3C9F0A53CEA6 /* SurvayDetailAssemblyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78175A4BF2150A394BC41C2 /* SurvayDetailAssemblyTest.swift */; };
+		3B3517E0526947E72BD727EA /* SurvayDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCE262A4AE39A922353B4 /* SurvayDetailController.swift */; };
+		C413801A3431E4EF05B1C7E4 /* SurvayDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9072C09A1194476A6DA70 /* SurvayDetailInteractor.swift */; };
+		95D11BF187C3246C07A753EA /* SurvayDetailInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE0E7987EDAA78C43A1CC7 /* SurvayDetailInteractorTest.swift */; };
+		EF338850C5FC770A473DED75 /* SurvayDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C6DE26B7D5FE6085B796C /* SurvayDetailRouter.swift */; };
+		CE9027475D19B9990EDCCE8F /* SurvayDetailRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13B347FD059C743A667E10 /* SurvayDetailRouterTest.swift */; };
+		C829BB5710F92F5226F22246 /* SurvayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5069B8B6B16C144A7EC554B /* SurvayDetailView.swift */; };
+		09334D680BCB3F491559A083 /* SurvayDetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A752EE23D9E1FC40B37A740 /* SurvayDetailViewControllerTest.swift */; };
+		DC9F1EF80CA7776E0DBD35DD /* SurvayListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51FEF2775A2A8DC7B3A0E6 /* SurvayListAssembly.swift */; };
+		4EDA5304E814DC2E5D1DB05D /* SurvayListAssemblyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BBB82656BF70D4B394B72F /* SurvayListAssemblyTest.swift */; };
+		8114B29C0203251FFF162EF9 /* SurvayListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D79EFE69802920FF086242 /* SurvayListController.swift */; };
+		85C30769D3C453367EAF17B2 /* SurvayListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF09038A0D4B4D44B7FFFD3A /* SurvayListInteractor.swift */; };
+		E5757B74821B18A9465CD1A8 /* SurvayListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76145CAFD00387C1C622100 /* SurvayListInteractorTest.swift */; };
+		6D4B38FBB96C6452CF5D852F /* SurvayListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA847778491C1C01A3A69D /* SurvayListRouter.swift */; };
+		243DF97AB2AA3CE4FEF5420C /* SurvayListRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A8C2ED707E45220C515582 /* SurvayListRouterTest.swift */; };
+		6E9C987D2C84645FC6ACAE68 /* SurvayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362BCFAE78593CC4FF733B3 /* SurvayListView.swift */; };
+		B3E3C8E482C153BF85C6A6A4 /* SurvayListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602216FC9B897B5D4868EA2 /* SurvayListViewControllerTest.swift */; };
 		B737FCC624C2CE7E0094D24B /* SurvayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCC524C2CE7E0094D24B /* SurvayModel.swift */; };
 		B737FCC924C2D1710094D24B /* SurvaySharedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCC824C2D1710094D24B /* SurvaySharedManager.swift */; };
-		DC9F1EF80CA7776E0DBD35DD /* SurvayListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51FEF2775A2A8DC7B3A0E6 /* SurvayListAssembly.swift */; };
-		E5757B74821B18A9465CD1A8 /* SurvayListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76145CAFD00387C1C622100 /* SurvayListInteractorTest.swift */; };
+		B75A7D9824C2DAFE0095480F /* SurvayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A7D9724C2DAFE0095480F /* SurvayView.swift */; };
+		B737FCB724C2B9C40094D24B /* UINavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCB624C2B9C30094D24B /* UINavigationControllerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,42 +58,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		086F96F1031CDE6AB5F55B27 /* Pods_SurvayAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurvayAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11EF879B69790B6B47145A81 /* Pods-SurvayApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurvayApp.release.xcconfig"; path = "Target Support Files/Pods-SurvayApp/Pods-SurvayApp.release.xcconfig"; sourceTree = "<group>"; };
-		13D79EFE69802920FF086242 /* SurvayListController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListController.swift; sourceTree = "<group>"; };
-		18180ABAA72239AC6E181B6F /* Pods-SurvayAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurvayAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SurvayAppTests/Pods-SurvayAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1874FEDACFFE22FEE2C2702D /* Pods-SurvayAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurvayAppTests.release.xcconfig"; path = "Target Support Files/Pods-SurvayAppTests/Pods-SurvayAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		2267CB40359E051E5CADCE94 /* Pods-SurvayApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurvayApp.debug.xcconfig"; path = "Target Support Files/Pods-SurvayApp/Pods-SurvayApp.debug.xcconfig"; sourceTree = "<group>"; };
-		37BBB82656BF70D4B394B72F /* SurvayListAssemblyTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListAssemblyTest.swift; sourceTree = "<group>"; };
-		47A8C2ED707E45220C515582 /* SurvayListRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListRouterTest.swift; sourceTree = "<group>"; };
-		6362BCFAE78593CC4FF733B3 /* SurvayListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListView.swift; sourceTree = "<group>"; };
-		74375CF45E6E3922D0308BE7 /* Pods_SurvayApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurvayApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB51FEF2775A2A8DC7B3A0E6 /* SurvayListAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListAssembly.swift; sourceTree = "<group>"; };
-		B737FC7224C2AE5B0094D24B /* SurvayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurvayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B737FC7524C2AE5B0094D24B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B737FC7724C2AE5B0094D24B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B737FC7E24C2AE5F0094D24B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B737FC8124C2AE5F0094D24B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B737FC8824C2AE5F0094D24B /* SurvayAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurvayAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B737FC8E24C2AE5F0094D24B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B737FC9B24C2B0FE0094D24B /* Routers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routers.swift; sourceTree = "<group>"; };
+		B737FCC024C2BD9E0094D24B /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
 		B737FC9C24C2B0FE0094D24B /* AnyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyView.swift; sourceTree = "<group>"; };
-		B737FCA124C2B1460094D24B /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
-		B737FCA424C2B2870094D24B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		B737FCAA24C2B3B10094D24B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B737FC7524C2AE5B0094D24B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B737FC7E24C2AE5F0094D24B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B737FCC324C2BE170094D24B /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		B737FC8124C2AE5F0094D24B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B737FCAF24C2B6B90094D24B /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		B737FCB324C2B7BF0094D24B /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
-		B737FCB624C2B9C30094D24B /* UINavigationControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerMock.swift; sourceTree = "<group>"; };
-		B737FCBB24C2BC9C0094D24B /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		B737FCBD24C2BCC10094D24B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		B737FCC024C2BD9E0094D24B /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
-		B737FCC324C2BE170094D24B /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		B737FC8E24C2AE5F0094D24B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B737FCAA24C2B3B10094D24B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B737FCA424C2B2870094D24B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B737FCA124C2B1460094D24B /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		2267CB40359E051E5CADCE94 /* Pods-SurvayApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurvayApp.debug.xcconfig"; path = "Target Support Files/Pods-SurvayApp/Pods-SurvayApp.debug.xcconfig"; sourceTree = "<group>"; };
+		11EF879B69790B6B47145A81 /* Pods-SurvayApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurvayApp.release.xcconfig"; path = "Target Support Files/Pods-SurvayApp/Pods-SurvayApp.release.xcconfig"; sourceTree = "<group>"; };
+		18180ABAA72239AC6E181B6F /* Pods-SurvayAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurvayAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SurvayAppTests/Pods-SurvayAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1874FEDACFFE22FEE2C2702D /* Pods-SurvayAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurvayAppTests.release.xcconfig"; path = "Target Support Files/Pods-SurvayAppTests/Pods-SurvayAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		74375CF45E6E3922D0308BE7 /* Pods_SurvayApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurvayApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		086F96F1031CDE6AB5F55B27 /* Pods_SurvayAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurvayAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B737FC9B24C2B0FE0094D24B /* Routers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routers.swift; sourceTree = "<group>"; };
+		B737FC7724C2AE5B0094D24B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B737FCBB24C2BC9C0094D24B /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		B737FC7224C2AE5B0094D24B /* SurvayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurvayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B737FC8824C2AE5F0094D24B /* SurvayAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurvayAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA26144AFA4837F662B49E54 /* SurvayDetailAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayDetailAssembly.swift; sourceTree = "<group>"; };
+		E78175A4BF2150A394BC41C2 /* SurvayDetailAssemblyTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayDetailAssemblyTest.swift; sourceTree = "<group>"; };
+		D85DCE262A4AE39A922353B4 /* SurvayDetailController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayDetailController.swift; sourceTree = "<group>"; };
+		70A9072C09A1194476A6DA70 /* SurvayDetailInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayDetailInteractor.swift; sourceTree = "<group>"; };
+		B2EE0E7987EDAA78C43A1CC7 /* SurvayDetailInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayDetailInteractorTest.swift; sourceTree = "<group>"; };
+		388C6DE26B7D5FE6085B796C /* SurvayDetailRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayDetailRouter.swift; sourceTree = "<group>"; };
+		6B13B347FD059C743A667E10 /* SurvayDetailRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayDetailRouterTest.swift; sourceTree = "<group>"; };
+		C5069B8B6B16C144A7EC554B /* SurvayDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayDetailView.swift; sourceTree = "<group>"; };
+		5A752EE23D9E1FC40B37A740 /* SurvayDetailViewControllerTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayDetailViewControllerTest.swift; sourceTree = "<group>"; };
+		AB51FEF2775A2A8DC7B3A0E6 /* SurvayListAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListAssembly.swift; sourceTree = "<group>"; };
+		37BBB82656BF70D4B394B72F /* SurvayListAssemblyTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListAssemblyTest.swift; sourceTree = "<group>"; };
+		13D79EFE69802920FF086242 /* SurvayListController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListController.swift; sourceTree = "<group>"; };
+		BF09038A0D4B4D44B7FFFD3A /* SurvayListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListInteractor.swift; sourceTree = "<group>"; };
+		D76145CAFD00387C1C622100 /* SurvayListInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListInteractorTest.swift; sourceTree = "<group>"; };
+		C9FA847778491C1C01A3A69D /* SurvayListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListRouter.swift; sourceTree = "<group>"; };
+		47A8C2ED707E45220C515582 /* SurvayListRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListRouterTest.swift; sourceTree = "<group>"; };
+		6362BCFAE78593CC4FF733B3 /* SurvayListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListView.swift; sourceTree = "<group>"; };
+		F602216FC9B897B5D4868EA2 /* SurvayListViewControllerTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListViewControllerTest.swift; sourceTree = "<group>"; };
 		B737FCC524C2CE7E0094D24B /* SurvayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvayModel.swift; sourceTree = "<group>"; };
 		B737FCC824C2D1710094D24B /* SurvaySharedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvaySharedManager.swift; sourceTree = "<group>"; };
-		BF09038A0D4B4D44B7FFFD3A /* SurvayListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListInteractor.swift; sourceTree = "<group>"; };
-		C9FA847778491C1C01A3A69D /* SurvayListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListRouter.swift; sourceTree = "<group>"; };
-		D76145CAFD00387C1C622100 /* SurvayListInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListInteractorTest.swift; sourceTree = "<group>"; };
-		F602216FC9B897B5D4868EA2 /* SurvayListViewControllerTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListViewControllerTest.swift; sourceTree = "<group>"; };
+		B75A7D9724C2DAFE0095480F /* SurvayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvayView.swift; sourceTree = "<group>"; };
+		B737FCB624C2B9C30094D24B /* UINavigationControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +140,22 @@
 		5A3A40BA177E97E3C9F0A4EB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6334D8515F4DA30A4F1042CB /* SurvayDetail */,
 				851D09E0C6DC2AB6FBB69938 /* SurvayList */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		6334D8515F4DA30A4F1042CB /* SurvayDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E78175A4BF2150A394BC41C2 /* SurvayDetailAssemblyTest.swift */,
+				B2EE0E7987EDAA78C43A1CC7 /* SurvayDetailInteractorTest.swift */,
+				6B13B347FD059C743A667E10 /* SurvayDetailRouterTest.swift */,
+				5A752EE23D9E1FC40B37A740 /* SurvayDetailViewControllerTest.swift */,
+			);
+			name = SurvayDetail;
+			path = SurvayDetail;
 			sourceTree = "<group>";
 		};
 		851D09E0C6DC2AB6FBB69938 /* SurvayList */ = {
@@ -145,17 +178,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AFA22A76AA42744B1543A3ED /* SurvayDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CA26144AFA4837F662B49E54 /* SurvayDetailAssembly.swift */,
+				D85DCE262A4AE39A922353B4 /* SurvayDetailController.swift */,
+				70A9072C09A1194476A6DA70 /* SurvayDetailInteractor.swift */,
+				388C6DE26B7D5FE6085B796C /* SurvayDetailRouter.swift */,
+				C5069B8B6B16C144A7EC554B /* SurvayDetailView.swift */,
+			);
+			name = SurvayDetail;
+			path = SurvayDetail;
+			sourceTree = "<group>";
+		};
 		B737FC6924C2AE5B0094D24B = {
 			isa = PBXGroup;
 			children = (
-				B737FCC724C2D1620094D24B /* Helper */,
-				B737FCC224C2BE030094D24B /* Models */,
-				B737FCB924C2BB990094D24B /* HTTPClient */,
 				B737FC9F24C2B1120094D24B /* AppDelegate */,
 				B737FCA924C2B3B10094D24B /* Config */,
 				A7AA10952523CAD36638F577 /* Frameworks */,
+				B737FCB924C2BB990094D24B /* HTTPClient */,
+				B737FCC724C2D1620094D24B /* Helper */,
 				B737FCA024C2B1330094D24B /* Localization */,
 				B737FC9A24C2B0FE0094D24B /* Misc */,
+				B737FCC224C2BE030094D24B /* Models */,
 				4C80230316F7FAC768624DAC /* Pods */,
 				B737FC7324C2AE5B0094D24B /* Products */,
 				B737FC9824C2B0720094D24B /* Resources */,
@@ -184,8 +230,8 @@
 		B737FC8B24C2AE5F0094D24B /* SurvayAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				B737FCB524C2B9C30094D24B /* Shared Mocks */,
 				5A3A40BA177E97E3C9F0A4EB /* Modules */,
+				B737FCB524C2B9C30094D24B /* Shared Mocks */,
 				B737FCB124C2B7BF0094D24B /* Test */,
 				B737FC8E24C2AE5F0094D24B /* Info.plist */,
 			);
@@ -244,8 +290,8 @@
 		B737FCAD24C2B6B90094D24B /* App */ = {
 			isa = PBXGroup;
 			children = (
-				B737FCBA24C2BC810094D24B /* ServiceAssembly */,
 				B737FCAE24C2B6B90094D24B /* AppAssembly */,
+				B737FCBA24C2BC810094D24B /* ServiceAssembly */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -323,14 +369,23 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		B75A7D9624C2DAD40095480F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6362BCFAE78593CC4FF733B3 /* SurvayListView.swift */,
+				B75A7D9724C2DAFE0095480F /* SurvayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C43D954FE07A03D0978139FA /* SurvayList */ = {
 			isa = PBXGroup;
 			children = (
+				B75A7D9624C2DAD40095480F /* Views */,
 				AB51FEF2775A2A8DC7B3A0E6 /* SurvayListAssembly.swift */,
 				13D79EFE69802920FF086242 /* SurvayListController.swift */,
 				BF09038A0D4B4D44B7FFFD3A /* SurvayListInteractor.swift */,
 				C9FA847778491C1C01A3A69D /* SurvayListRouter.swift */,
-				6362BCFAE78593CC4FF733B3 /* SurvayListView.swift */,
 			);
 			path = SurvayList;
 			sourceTree = "<group>";
@@ -339,6 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				B737FCAD24C2B6B90094D24B /* App */,
+				AFA22A76AA42744B1543A3ED /* SurvayDetail */,
 				C43D954FE07A03D0978139FA /* SurvayList */,
 			);
 			path = Modules;
@@ -551,23 +607,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B737FCC124C2BD9E0094D24B /* APIConfig.swift in Sources */,
 				B737FC9E24C2B0FE0094D24B /* AnyView.swift in Sources */,
 				B737FC7624C2AE5B0094D24B /* AppDelegate.swift in Sources */,
-				B737FCBE24C2BCC10094D24B /* HTTPClient.swift in Sources */,
+				B737FCC424C2BE170094D24B /* AuthenticationModel.swift in Sources */,
 				B737FCB024C2B6B90094D24B /* DependencyManager.swift in Sources */,
+				B737FCBE24C2BCC10094D24B /* HTTPClient.swift in Sources */,
 				B737FCA224C2B1460094D24B /* Localization.swift in Sources */,
 				B737FC9D24C2B0FE0094D24B /* Routers.swift in Sources */,
-				B737FCC424C2BE170094D24B /* AuthenticationModel.swift in Sources */,
-				B737FCC624C2CE7E0094D24B /* SurvayModel.swift in Sources */,
-				B737FCC124C2BD9E0094D24B /* APIConfig.swift in Sources */,
 				B737FC7824C2AE5B0094D24B /* SceneDelegate.swift in Sources */,
+				B737FCBC24C2BC9C0094D24B /* ServiceAssembly.swift in Sources */,
+				C18BF47616AF68B88CF34959 /* SurvayDetailAssembly.swift in Sources */,
+				3B3517E0526947E72BD727EA /* SurvayDetailController.swift in Sources */,
+				C413801A3431E4EF05B1C7E4 /* SurvayDetailInteractor.swift in Sources */,
+				EF338850C5FC770A473DED75 /* SurvayDetailRouter.swift in Sources */,
+				C829BB5710F92F5226F22246 /* SurvayDetailView.swift in Sources */,
 				DC9F1EF80CA7776E0DBD35DD /* SurvayListAssembly.swift in Sources */,
-				B737FCC924C2D1710094D24B /* SurvaySharedManager.swift in Sources */,
 				8114B29C0203251FFF162EF9 /* SurvayListController.swift in Sources */,
 				85C30769D3C453367EAF17B2 /* SurvayListInteractor.swift in Sources */,
-				B737FCBC24C2BC9C0094D24B /* ServiceAssembly.swift in Sources */,
 				6D4B38FBB96C6452CF5D852F /* SurvayListRouter.swift in Sources */,
 				6E9C987D2C84645FC6ACAE68 /* SurvayListView.swift in Sources */,
+				B737FCC624C2CE7E0094D24B /* SurvayModel.swift in Sources */,
+				B737FCC924C2D1710094D24B /* SurvaySharedManager.swift in Sources */,
+				B75A7D9824C2DAFE0095480F /* SurvayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,11 +638,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B737FCB424C2B7BF0094D24B /* GeneratedMocks.swift in Sources */,
+				21491F870D5D3C9F0A53CEA6 /* SurvayDetailAssemblyTest.swift in Sources */,
+				95D11BF187C3246C07A753EA /* SurvayDetailInteractorTest.swift in Sources */,
+				CE9027475D19B9990EDCCE8F /* SurvayDetailRouterTest.swift in Sources */,
+				09334D680BCB3F491559A083 /* SurvayDetailViewControllerTest.swift in Sources */,
 				4EDA5304E814DC2E5D1DB05D /* SurvayListAssemblyTest.swift in Sources */,
 				E5757B74821B18A9465CD1A8 /* SurvayListInteractorTest.swift in Sources */,
 				243DF97AB2AA3CE4FEF5420C /* SurvayListRouterTest.swift in Sources */,
-				B737FCB724C2B9C40094D24B /* UINavigationControllerMock.swift in Sources */,
 				B3E3C8E482C153BF85C6A6A4 /* SurvayListViewControllerTest.swift in Sources */,
+				B737FCB724C2B9C40094D24B /* UINavigationControllerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

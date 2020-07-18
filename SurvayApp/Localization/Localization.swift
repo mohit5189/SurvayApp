@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+enum Localization: String {
+    case screenTitle = "survay_title"
+    case survayButtonTitle = "survay_button_title"
+    case survayDetailTitle = "survay_detail_title"
+    
+    func local() -> String {
+        return NSLocalizedString(self.rawValue, comment: "")
+    }
+}

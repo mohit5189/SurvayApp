@@ -29,9 +29,11 @@ final class SurvayListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.title = Localization.screenTitle.local()
+        navigationItem.leftBarButtonItem = barButtonItem
+        navigationController?.navigationBar.tintColor = .black
+     
         router.handleLoader(shouldShow: true)
-        
         interactor.fetchAuthToken { [weak self] authModel in
             guard let authModel = authModel else {
                 return
@@ -41,17 +43,24 @@ final class SurvayListViewController: UIViewController {
             self?.getSurvayList()
         }
         
+        moduleView.survayButtonCallBack = { [weak self] survayModel in
+            self?.router.openSurvayDetails(survayModel)
+        }
+
     }
 
     private func getSurvayList() {
         interactor.fetchSurvays { [weak self] survays in
-            self?.router.handleLoader(shouldShow: false)
-
+            DispatchQueue.main.async {
+                self?.router.handleLoader(shouldShow: false)
+            }
             guard let survays = survays, !survays.isEmpty else {
                 return
             }
 
-            self?.moduleView.presentSurvays(model: survays)
+            DispatchQueue.main.async {
+                self?.moduleView.presentSurvays(survays)
+            }
         }
     }
     required init?(coder aDecoder: NSCoder) {
@@ -59,7 +68,8 @@ final class SurvayListViewController: UIViewController {
     }
     
     @objc private func refreshSurvays() {
-        
+        router.handleLoader(shouldShow: true)
+        getSurvayList()
     }
 }
 
