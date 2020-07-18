@@ -1,0 +1,37 @@
+PODS:
+  - Cuckoo (1.1.0)
+  - Nimble (8.0.2)
+  - Quick (2.1.0)
+  - SnapKit (5.0.1)
+  - Swinject (2.6.0)
+  - SwinjectAutoregistration (2.6.0):
+    - Swinject (~> 2.6)
+
+DEPENDENCIES:
+  - Cuckoo (= 1.1.0)
+  - Nimble (= 8.0.2)
+  - Quick (= 2.1.0)
+  - SnapKit (= 5.0.1)
+  - Swinject (= 2.6.0)
+  - SwinjectAutoregistration (= 2.6.0)
+
+SPEC REPOS:
+  trunk:
+    - Cuckoo
+    - Nimble
+    - Quick
+    - SnapKit
+    - Swinject
+    - SwinjectAutoregistration
+
+SPEC CHECKSUMS:
+  Cuckoo: 6184a6bdc122b1a8e27b80198f76d1038ddbe861
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
+  SwinjectAutoregistration: 93a908f7543c401b0c315305ac0ae501efdbce89
+
+PODFILE CHECKSUM: 3ef036963b194cd7b521a6ac0cd4a453bfa1eb04
+
+COCOAPODS: 1.9.2
