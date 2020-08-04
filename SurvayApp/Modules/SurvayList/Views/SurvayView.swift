@@ -63,7 +63,7 @@ final class SurvayView: UIView {
     
     lazy private var bottomButton: UIButton = {
         var button = UIButton()
-        button.setTitle(Localization.survayButtonTitle.local(), for: .normal)
+        button.setTitle(R.string.localizable.survay_button_title(), for: .normal)
         button.layer.cornerRadius = Constants.commonSize / 2
         button.backgroundColor = .orange
         button.titleLabel?.textColor = .black

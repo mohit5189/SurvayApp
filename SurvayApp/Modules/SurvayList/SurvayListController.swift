@@ -2,13 +2,23 @@ import UIKit
 import MBProgressHUD
 
 protocol SurvayListPresenterProtocol: AnyObject {
+    func handleCurrentPage(_ pageNumber: Int)
+}
 
+private struct Constants {
+    static let pageSize = 5
 }
 
 final class SurvayListViewController: UIViewController {
     private let moduleView: SurvayListViewProtocol
     private let interactor: SurvayListInteractorProtocol
     private let router: SurvayListRouterProtocol
+    private var currentPage: Int = 0 {
+        didSet {
+            getSurvayList(currentPage)
+        }
+    }
+    private var survays: [SurvayModel] = []
     lazy private var barButtonItem: UIBarButtonItem = {
         var button = UIBarButtonItem(image: #imageLiteral(resourceName: "retry"), style: .plain, target: self, action: #selector(refreshSurvays))
         return button
@@ -29,7 +39,7 @@ final class SurvayListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = Localization.screenTitle.local()
+        navigationItem.title = R.string.localizable.survay_title()
         navigationItem.leftBarButtonItem = barButtonItem
         navigationController?.navigationBar.tintColor = .black
         
@@ -41,17 +51,17 @@ final class SurvayListViewController: UIViewController {
             }
             
             SurvaySharedManager.sharedInstance.authModel = authModel
-            self?.getSurvayList()
+            self?.currentPage = 0
         }
         
         moduleView.survayButtonCallBack = { [weak self] survayModel in
             self?.router.openSurvayDetails(survayModel)
         }
-
+        
     }
 
-    private func getSurvayList() {
-        interactor.fetchSurvays { [weak self] survays in
+    private func getSurvayList(_ pageNumber: Int) {
+        interactor.fetchSurvays(currentPage: pageNumber, pageSize: Constants.pageSize) { [weak self] survays in
             DispatchQueue.main.async {
                 self?.router.handleLoader(shouldShow: false)
             }
@@ -59,9 +69,14 @@ final class SurvayListViewController: UIViewController {
                 self?.showError()
                 return
             }
-
+            self?.survays += survays
+            
             DispatchQueue.main.async {
-                self?.moduleView.presentSurvays(survays)
+                if self?.currentPage == 0 {
+                    self?.moduleView.refreshSurvays(survays)
+                } else {
+                    self?.moduleView.addMoreSurvays(survays)
+                }
             }
         }
     }
@@ -78,10 +93,15 @@ final class SurvayListViewController: UIViewController {
     
     @objc private func refreshSurvays() {
         router.handleLoader(shouldShow: true)
-        getSurvayList()
+        currentPage = 0
     }
 }
 
 extension SurvayListViewController: SurvayListPresenterProtocol {
-
+    func handleCurrentPage(_ pageNumber: Int) {
+        if pageNumber == survays.count - 1 {
+            currentPage += 1
+            router.handleLoader(shouldShow: true)
+        }
+    }
 }

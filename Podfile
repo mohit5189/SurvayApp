@@ -10,6 +10,7 @@ target 'SurvayApp' do
   pod 'SnapKit', '5.0.1'
   pod 'MBProgressHUD', '1.2.0'
   pod 'SDWebImage', '5.8.4'
+  pod 'R.swift', '5.2.2'
 
   target 'SurvayAppTests' do
     inherit! :search_paths

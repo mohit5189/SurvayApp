@@ -1,4 +1,5 @@
 import UIKit
+import SnapKit
 
 private struct Constants {
     static let pageCOntrolWidth = 30
@@ -7,12 +8,16 @@ private struct Constants {
 protocol SurvayListViewProtocol: AnyView {
     var survayButtonCallBack: ((SurvayModel) -> ())? { get set}
     var presenter: SurvayListPresenterProtocol? { get set }
-    func presentSurvays(_ survays: [SurvayModel])
+    func refreshSurvays(_ survays: [SurvayModel])
+    func addMoreSurvays(_ survays: [SurvayModel])
 }
 
 final class SurvayListView: UIView {
     var survayButtonCallBack: ((SurvayModel) -> ())?
     weak var presenter: SurvayListPresenterProtocol?
+    private var lastView: SurvayView?
+    var lastViewBottomConstraints: Constraint?
+
     lazy private var scrollView: UIScrollView = {
         var scrollView = UIScrollView()
         scrollView.isPagingEnabled = true
@@ -55,8 +60,9 @@ final class SurvayListView: UIView {
 }
 
 extension SurvayListView: SurvayListViewProtocol {
-    func presentSurvays(_ survays: [SurvayModel]) {
+    func refreshSurvays(_ survays: [SurvayModel]) {
         layoutIfNeeded()
+        lastView = nil
         _ = scrollView.subviews.map { $0.removeFromSuperview() }
         scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
         pageControl.numberOfPages = survays.count
@@ -65,8 +71,21 @@ extension SurvayListView: SurvayListViewProtocol {
         updatePageControlCircleSize()
     }
     
+    func addMoreSurvays(_ survays: [SurvayModel]) {
+        layoutIfNeeded()
+        if survays.count > 0 {
+            removeLastViewBottomConstraint()
+        }
+        pageControl.numberOfPages = pageControl.numberOfPages + survays.count
+        addSurvayViews(survays)
+        updatePageControlCircleSize()
+    }
+    
+    private func removeLastViewBottomConstraint() {
+        lastViewBottomConstraints?.deactivate()
+    }
+    
     private func addSurvayViews(_ survays: [SurvayModel]) {
-        var lastView: SurvayView?
         for (index, survay) in survays.enumerated() {
             let survayView = SurvayView(frame: .zero)
             survayView.configView(survay)
@@ -81,7 +100,7 @@ extension SurvayListView: SurvayListViewProtocol {
                 }
                 $0.width.height.equalTo(self)
                 if index == survays.count - 1 {
-                    $0.bottom.equalToSuperview()
+                    lastViewBottomConstraints =  $0.bottom.equalToSuperview().constraint
                 }
             }
             
@@ -103,5 +122,6 @@ extension SurvayListView: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let pageNumber = round(scrollView.contentOffset.y / scrollView.frame.size.height)
         pageControl.currentPage = Int(pageNumber)
+        presenter?.handleCurrentPage(pageControl.currentPage)
     }
 }

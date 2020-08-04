@@ -19,7 +19,6 @@
 		B737FC7F24C2AE5F0094D24B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B737FC7E24C2AE5F0094D24B /* Assets.xcassets */; };
 		B737FC9D24C2B0FE0094D24B /* Routers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FC9B24C2B0FE0094D24B /* Routers.swift */; };
 		B737FC9E24C2B0FE0094D24B /* AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FC9C24C2B0FE0094D24B /* AnyView.swift */; };
-		B737FCA224C2B1460094D24B /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCA124C2B1460094D24B /* Localization.swift */; };
 		B737FCA524C2B2880094D24B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B737FCA424C2B2870094D24B /* Localizable.strings */; };
 		B737FCAC24C2B3E40094D24B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B737FC8024C2AE5F0094D24B /* LaunchScreen.storyboard */; };
 		B737FCB024C2B6B90094D24B /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737FCAF24C2B6B90094D24B /* DependencyManager.swift */; };
@@ -38,6 +37,7 @@
 		B75A7DAA24C2F6200095480F /* SurvayListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A7DA924C2F6200095480F /* SurvayListInteractorTests.swift */; };
 		B75A7DAB24C2F8A70095480F /* authToken.json in Resources */ = {isa = PBXBuildFile; fileRef = B75A7D9A24C2EF990095480F /* authToken.json */; };
 		B75A7DAC24C2F8A90095480F /* SurvayList.json in Resources */ = {isa = PBXBuildFile; fileRef = B75A7D9C24C2EFC30095480F /* SurvayList.json */; };
+		B78E53EF24D92DA00004FD08 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78E53EE24D92DA00004FD08 /* R.generated.swift */; };
 		C18BF47616AF68B88CF34959 /* SurvayDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26144AFA4837F662B49E54 /* SurvayDetailAssembly.swift */; };
 		C413801A3431E4EF05B1C7E4 /* SurvayDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9072C09A1194476A6DA70 /* SurvayDetailInteractor.swift */; };
 		C829BB5710F92F5226F22246 /* SurvayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5069B8B6B16C144A7EC554B /* SurvayDetailView.swift */; };
@@ -76,7 +76,6 @@
 		B737FC8E24C2AE5F0094D24B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B737FC9B24C2B0FE0094D24B /* Routers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routers.swift; sourceTree = "<group>"; };
 		B737FC9C24C2B0FE0094D24B /* AnyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyView.swift; sourceTree = "<group>"; };
-		B737FCA124C2B1460094D24B /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		B737FCA424C2B2870094D24B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B737FCAA24C2B3B10094D24B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B737FCAF24C2B6B90094D24B /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
@@ -93,6 +92,7 @@
 		B75A7DA524C2F2A00095480F /* HTTPClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientMock.swift; sourceTree = "<group>"; };
 		B75A7DA724C2F3CF0095480F /* SurvayListControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvayListControllerTests.swift; sourceTree = "<group>"; };
 		B75A7DA924C2F6200095480F /* SurvayListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvayListInteractorTests.swift; sourceTree = "<group>"; };
+		B78E53EE24D92DA00004FD08 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		BF09038A0D4B4D44B7FFFD3A /* SurvayListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListInteractor.swift; sourceTree = "<group>"; };
 		C5069B8B6B16C144A7EC554B /* SurvayDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayDetailView.swift; sourceTree = "<group>"; };
 		C9FA847778491C1C01A3A69D /* SurvayListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SurvayListRouter.swift; sourceTree = "<group>"; };
@@ -233,7 +233,7 @@
 		B737FCA024C2B1330094D24B /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				B737FCA124C2B1460094D24B /* Localization.swift */,
+				B78E53EE24D92DA00004FD08 /* R.generated.swift */,
 			);
 			name = Localization;
 			path = SurvayApp/Localization;
@@ -371,6 +371,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B737FC9124C2AE5F0094D24B /* Build configuration list for PBXNativeTarget "SurvayApp" */;
 			buildPhases = (
+				B78E53ED24D92D440004FD08 /* R Swift */,
 				8D2740E4540EE15A50D93155 /* [CP] Check Pods Manifest.lock */,
 				B737FC6E24C2AE5B0094D24B /* Sources */,
 				B737FC6F24C2AE5B0094D24B /* Frameworks */,
@@ -547,6 +548,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B78E53ED24D92D440004FD08 /* R Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R Swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -560,11 +581,11 @@
 				B737FCC424C2BE170094D24B /* AuthenticationModel.swift in Sources */,
 				B737FCB024C2B6B90094D24B /* DependencyManager.swift in Sources */,
 				B737FCBE24C2BCC10094D24B /* HTTPClient.swift in Sources */,
-				B737FCA224C2B1460094D24B /* Localization.swift in Sources */,
 				B737FC9D24C2B0FE0094D24B /* Routers.swift in Sources */,
 				B737FC7824C2AE5B0094D24B /* SceneDelegate.swift in Sources */,
 				B737FCBC24C2BC9C0094D24B /* ServiceAssembly.swift in Sources */,
 				C18BF47616AF68B88CF34959 /* SurvayDetailAssembly.swift in Sources */,
+				B78E53EF24D92DA00004FD08 /* R.generated.swift in Sources */,
 				3B3517E0526947E72BD727EA /* SurvayDetailController.swift in Sources */,
 				C413801A3431E4EF05B1C7E4 /* SurvayDetailInteractor.swift in Sources */,
 				EF338850C5FC770A473DED75 /* SurvayDetailRouter.swift in Sources */,

@@ -2,6 +2,9 @@ PODS:
   - MBProgressHUD (1.2.0)
   - Nimble (8.0.2)
   - Quick (2.1.0)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
   - SDWebImage (5.8.4):
     - SDWebImage/Core (= 5.8.4)
   - SDWebImage/Core (5.8.4)
@@ -14,6 +17,7 @@ DEPENDENCIES:
   - MBProgressHUD (= 1.2.0)
   - Nimble (= 8.0.2)
   - Quick (= 2.1.0)
+  - R.swift
   - SDWebImage (= 5.8.4)
   - SnapKit (= 5.0.1)
   - Swinject (= 2.6.0)
@@ -24,6 +28,8 @@ SPEC REPOS:
     - MBProgressHUD
     - Nimble
     - Quick
+    - R.swift
+    - R.swift.Library
     - SDWebImage
     - SnapKit
     - Swinject
@@ -33,11 +39,13 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
   SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
   SwinjectAutoregistration: 93a908f7543c401b0c315305ac0ae501efdbce89
 
-PODFILE CHECKSUM: 7daffc3427d83eefaade93c50ab659b165aafc99
+PODFILE CHECKSUM: 5fc390d961fcecb84c21bb25b6192563374408d5
 
 COCOAPODS: 1.9.2

@@ -9,7 +9,7 @@
 import Foundation
 
 private struct Constants {
-    static let networkTimeoutInterval = 10
+    static let networkTimeoutInterval = 20
     static let jsonKey = "value"
 }
 
