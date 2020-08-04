@@ -25,8 +25,8 @@ final class SurvayListRouter: Router, SurvayListRouterProtocol {
     }
     
     func showError() {
-        let alert = UIAlertController(title: nil, message: Localization.errorMessage.local() , preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: Localization.okButtonTitle.local(), style: .default, handler: nil))
+        let alert = UIAlertController(title: nil, message: R.string.localizable.error_message() , preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: R.string.localizable.ok_button_title(), style: .default, handler: nil))
         sourceViewController?.present(alert, animated: true, completion: nil)
 
     }

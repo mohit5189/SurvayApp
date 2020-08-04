@@ -24,7 +24,7 @@ final class SurvayDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = Localization.survayDetailTitle.local()
+        navigationItem.title = R.string.localizable.survay_detail_title()
         moduleView.presentModel(model: survayModel)
     }
 

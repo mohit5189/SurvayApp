@@ -7,7 +7,7 @@ private struct Constants {
 protocol SurvayListInteractorProtocol: class {
     var httpClient: HTTPClientProtocol? { get set }
     func fetchAuthToken(completion: @escaping (AuthenticationModel?) -> Void)
-    func fetchSurvays(_ completion: @escaping ([SurvayModel]?) -> Void)
+    func fetchSurvays(currentPage: Int, pageSize: Int, _ completion: @escaping ([SurvayModel]?) -> Void)
 }
 
 final class SurvayListInteractor: SurvayListInteractorProtocol {
@@ -35,8 +35,8 @@ final class SurvayListInteractor: SurvayListInteractorProtocol {
         })
     }
     
-    func fetchSurvays(_ completion: @escaping ([SurvayModel]?) -> Void) {
-        httpClient?.sendRequest(survayURL(), apiMethod: .GET, completion: { data, error in
+    func fetchSurvays(currentPage: Int, pageSize: Int, _ completion: @escaping ([SurvayModel]?) -> Void) {
+        httpClient?.sendRequest(survayURL(pageNumber: currentPage, pageSize: pageSize), apiMethod: .GET, completion: { data, error in
             if error != nil {
                 completion(nil)
             } else {
@@ -57,7 +57,7 @@ final class SurvayListInteractor: SurvayListInteractorProtocol {
         return "grant_type=password&username=carlos@nimbl3.com&password=antikera" // Need to hardcode this since have no UI for input this
     }
     
-    private func survayURL() -> String {
-        return String(format: "%@%@?access_token=%@", APIConfig.baseURL, APIConfig.survayEndpoint, SurvaySharedManager.sharedInstance.authModel?.accessToken ?? "")
+    private func survayURL(pageNumber: Int, pageSize: Int) -> String {
+        return String(format: "%@%@?access_token=%@&page=%d&per_page=%d", APIConfig.baseURL, APIConfig.survayEndpoint, SurvaySharedManager.sharedInstance.authModel?.accessToken ?? "", pageNumber, pageSize)
     }
 }
